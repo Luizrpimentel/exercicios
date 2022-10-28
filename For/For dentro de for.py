@@ -13,8 +13,7 @@ fabricas = ['Lira Manufacturing', 'Fábrica Hashtag', 'Python Manufaturas', 'Pro
 nivel_minimo = 50
 fabricasAbaixoNivel = []
 for i, lista in enumerate(estoque):
-    #se dentro daquela lista tem alguem abaixo do nível minimo
-    for qtde in lista:
+     for qtde in lista:
         if qtde < nivel_minimo:
             if fabricas[i] in fabricasAbaixoNivel:
                 pass
