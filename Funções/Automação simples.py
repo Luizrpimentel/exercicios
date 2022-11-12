@@ -7,11 +7,12 @@ import time
 def automocao():
     wb.open('https://web.whatsapp.com/')
     time.sleep(10)
-    pg.click(140,247) # ponto da 1 conversa
+    pg.click(140, 247) # ponto da 1 conversa
     time.sleep(3)
-    pg.click(607,700) # ponto da 1 conversa
-    for enviar in range(30):
-        pg.write('Teste')
+    pg.click(607, 700) # ponto da 1 conversa
+
+    for enviar in range(500):
+        pg.write('OI MUANOITE')
         pg.press('enter')
 
     return enviar
